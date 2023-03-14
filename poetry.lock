@@ -1,0 +1,60 @@
+[[package]]
+name = "graphviz"
+version = "0.20.1"
+description = "Simple Python interface for Graphviz"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+dev = ["tox (>=3)", "flake8", "pep8-naming", "wheel", "twine"]
+docs = ["sphinx (>=5)", "sphinx-autodoc-typehints", "sphinx-rtd-theme"]
+test = ["pytest (>=7)", "pytest-mock (>=3)", "mock (>=4)", "pytest-cov", "coverage"]
+
+[[package]]
+name = "mchmm"
+version = "0.4.3"
+description = "Markov chains and Hidden Markov models"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+graphviz = "*"
+numpy = "*"
+scipy = "*"
+
+[[package]]
+name = "numpy"
+version = "1.24.2"
+description = "Fundamental package for array computing in Python"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "scipy"
+version = "1.9.3"
+description = "Fundamental algorithms for scientific computing in Python"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+numpy = ">=1.18.5,<1.26.0"
+
+[package.extras]
+test = ["pytest", "pytest-cov", "pytest-xdist", "asv", "mpmath", "gmpy2", "threadpoolctl", "scikit-umfpack"]
+doc = ["sphinx (!=4.1.0)", "pydata-sphinx-theme (==0.9.0)", "sphinx-panels (>=0.5.2)", "matplotlib (>2)", "numpydoc", "sphinx-tabs"]
+dev = ["mypy", "typing-extensions", "pycodestyle", "flake8"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "4c5c1065f14542f81d707b0ff5f6e0e5f1b38be49f3c0636a95402669946f607"
+
+[metadata.files]
+graphviz = []
+mchmm = []
+numpy = []
+scipy = []
